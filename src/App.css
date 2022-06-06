@@ -1,16 +1,25 @@
 
 .App {
   text-align: center;
-  display: grid;
-  grid-template-rows: 100vh;
-  grid-template-columns: 1fr;
-  justify-items: center;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 230px 75px 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    background-color: #EDC7B7
 }
 
-.first-page {
-  width: 100%;
-  
-}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
 
 .logo-container {
   width: 100%;
@@ -21,10 +30,11 @@
 .logo-container .logo-text{
   font-family: 'Dancing Script', cursive;
   margin-bottom: 10px;
-  font-size: 75px;
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  font-size: 80px;
+  color: rgb(0, 58, 92);
+  /* background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   width: 400px;
 }
 
@@ -32,4 +42,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.content-container {
+  width: 100%;
+  height: 1fr;
 }

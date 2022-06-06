@@ -13,7 +13,7 @@ import {
     Link
 } from "react-router-dom";
 
-const pages = [{ link: "about", display: "About" }];
+const pages = [{ link: "home", display: "Home" }, { link: "about", display: "About" }, { link: "products", display: "Products" }, { link: "contact", display: "Contact" }];
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -68,11 +68,11 @@ const Navbar = () => {
                     </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
                         {pages.map((page) => (
-                            <Link to={`/${page.link}`}>
+                            <Link to={`/${page.link}`} >
                                 <Button
                                     key={page.display}
                                     onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
+                                    sx={{ my: 2, color: 'white', display: 'block', fontSize: 20, textDecoration: 'unset' }}
                                 >
                                     {page.display}
                                 </Button>
