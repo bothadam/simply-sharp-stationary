@@ -2,10 +2,46 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
 
+.Products .products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
 }
 
 .Products .product {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 30px;
+    grid-gap: 10px;
+    width: 250px;
+    justify-items: center;
+    align-items: center;
+    
+    background-color: rgba(0, 58, 92, 0.76);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 20px;
+}
+
+.Products .product .product-name {
+    color: white;
+    font-size: 18px;
+}
+
+.Products .product .product-image {
+    width: 150px;
+    height: 150px;
+}
+
+.Products .product .product-price {
+    color: white;
+    font-size: 14px;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
 }

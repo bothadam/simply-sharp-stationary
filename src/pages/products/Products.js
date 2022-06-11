@@ -35,14 +35,19 @@ const Products = () => {
 
     const renderProduct = (product) => {
         return <div className="product">
-            <div>{product.name}</div>
-            <div>{centToRandDisplay(product.cent_price)}</div>
+            <div className="product-name">{product.name}</div>
+            <div className="product-image">
+                <img src={product.image_url} />
+            </div>
+            <div className="product-price">{centToRandDisplay(product.cent_price)}</div>
         </div>
     }
 
     return (
         <div className="Products">
-            {products.map(renderProduct)}
+            <div className="products-container">
+                {products.map(renderProduct)}
+            </div>
         </div>
     );
 };
