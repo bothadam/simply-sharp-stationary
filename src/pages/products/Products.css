@@ -1,0 +1,11 @@
+.Products {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.Products .product {
+    display: flex;
+    flex-direction: column;
+}

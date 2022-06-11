@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 
 const pages = [{ link: "home", display: "Home" }, { link: "about", display: "About" }, { link: "products", display: "Products" }, { link: "contact", display: "Contact" }];
+// const pages = [{ link: "contact", display: "Contact" }];
 
 const Navbar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
