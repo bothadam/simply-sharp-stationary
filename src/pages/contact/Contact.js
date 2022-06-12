@@ -21,7 +21,7 @@ const Contact = () => {
                     <div id="email-img" className="contact-image" />
                     <hr className="divider" />
                     <div>simplysharpstationery@gmail.com</div>
-                    <a className="contact-action-button" href="mailto:adambotha007@gmail.com" target='blank'>
+                    <a className="contact-action-button" href="mailto:simplysharpstationery@gmail.com" target='blank'>
                         Click here to email us
                     </a>
                 </div>
