@@ -12,7 +12,7 @@ const Contact = () => {
                     {/* WhatsApp */}
                     <div id="whatsapp-img" className="contact-image" />
                     <hr className="divider" />
-                    <div>082 350 5445</div>
+                    <div className="sub-container-text">082 350 5445</div>
                     <a className="contact-action-button" href={`https://wa.me/27726983512?text=${encodeURI('Hi, I have a stationery related enquiry.')}`} target='blank'>
                         Click here to start whatsapp chat
                     </a>
@@ -20,7 +20,7 @@ const Contact = () => {
                 <div className="contact-sub-container">
                     <div id="email-img" className="contact-image" />
                     <hr className="divider" />
-                    <div>simplysharpstationery@gmail.com</div>
+                    <div className="sub-container-text" id="email-text">simplysharpstationery@gmail.com</div>
                     <a className="contact-action-button" href="mailto:simplysharpstationery@gmail.com" target='blank'>
                         Click here to email us
                     </a>
@@ -28,7 +28,7 @@ const Contact = () => {
                 <div className="contact-sub-container">
                     <div id="address-img" className="contact-image" />
                     <hr className="divider" />
-                    <div>
+                    <div className="sub-container-text">
                         11 Brink Street, Welgemoed, 7500
                     </div>
                     <a className="contact-action-button" href="https://goo.gl/maps/9ez3gAVYd3US5AVB9" target='blank'>
