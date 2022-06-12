@@ -2,29 +2,108 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
+    width: 100%;
 }
 
 .Contact .heading { 
     display: flex;
-    font-size: 40px;
     justify-content: center;
     align-content: center;
-    padding: 40px;
+    padding: 20px;
+    background-color: var(--tertiary);
+    font-size: 40px;
 }
 
 
 .Contact .contact-container {
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0px 50px 80px 50px;
 }
 
 .Contact .contact-sub-container {
     display: grid;
-    flex-direction: column;
     justify-items: center;
     align-items: center;
-    grid-template-rows: 1fr 1fr ;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 4fr 5px 1fr 1fr;
     grid-template-columns: 1fr;
-    font-size: 25px;
+    background-color: var(--primary);
+    border-radius: 15px;
+    
+    width: 350px;
+    height: 350px;
+    font-size: 20px;
+    margin: 10px 10px;
+    padding: 10px 10px;
 }
+
+.Contact .contact-image {
+    width: 180px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.Contact #email-img {
+    background-image: url('../../assets/email-icon.png');
+}
+
+.Contact #whatsapp-img {
+    background-image: url('../../assets/whatsapp-icon.png');
+}
+
+.Contact #address-img {
+    background-image: url('../../assets/directions.jpg');
+}
+
+.Contact .contact-action-button {
+    background-color: var(--accent);
+    color: var(--off-white);
+    border-radius: 5px;
+    height: 40px;
+    width: 90%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+@media (hover: none) {
+    .Contact .contact-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .Contact .contact-sub-container {
+        width: 700px;
+        height: 600px;
+        font-size: 40px;
+        padding: 25px 50px;
+        margin: 25px 50px;
+        grid-template-rows: 3fr 5px 1fr 2fr;
+    }
+
+    .Contact .heading { 
+        font-size: 70px;
+    }
+
+    .Contact .contact-image {
+        height: 80%;
+    }
+
+    
+    .Contact .contact-action-button {
+        height: 70%;
+        width: 100%;
+        font-size: 38px;
+        font-weight: 600;
+    }
+  }

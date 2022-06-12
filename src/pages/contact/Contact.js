@@ -1,9 +1,5 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import './Contact.css'
-import whatsappIcon from '../../assets/whatsapp-icon.png';
-import emailIcon from '../../assets/email-icon.png';
-import addressIcon from '../../assets/address.webp';
 
 const Contact = () => {
     return (
@@ -14,47 +10,35 @@ const Contact = () => {
             <div className="contact-container">
                 <div className="contact-sub-container">
                     {/* WhatsApp */}
-                    <Box
-                        component="img"
-                        sx={{
-                            height: 150,
-                            width: 150,
-                        }}
-                        alt="Whatsapp."
-                        src={whatsappIcon}
-                    />
-                    <a href={`https://wa.me/27726983512?text=${encodeURI('Hello, I am from the website')}`} target='blank'>082 350 5445</a>
+                    <div id="whatsapp-img" className="contact-image" />
+                    <hr className="divider" />
+                    <div>082 350 5445</div>
+                    <a className="contact-action-button" href={`https://wa.me/27726983512?text=${encodeURI('Hi, I have a stationery related enquiry.')}`} target='blank'>
+                        Click here to start whatsapp chat
+                    </a>
                 </div>
                 <div className="contact-sub-container">
-                    {/* Email */}
-                    <Box
-                        component="img"
-                        sx={{
-                            height: 150,
-                            width: 190,
-                        }}
-                        alt="Whatsapp."
-                        src={emailIcon}
-                    />
-                    <a href="mailto:adambotha007@gmail.com" target='blank'>simplysharpstationery@gmail.com</a>
+                    <div id="email-img" className="contact-image" />
+                    <hr className="divider" />
+                    <div>simplysharpstationery@gmail.com</div>
+                    <a className="contact-action-button" href="mailto:adambotha007@gmail.com" target='blank'>
+                        Click here to email us
+                    </a>
                 </div>
                 <div className="contact-sub-container">
-                    {/* Address */}
-                    <Box
-                        component="img"
-                        sx={{
-                            height: 150,
-                            width: 150,
-                        }}
-                        alt="Whatsapp."
-                        src={addressIcon}
-                    />
-                    <a href="https://goo.gl/maps/9ez3gAVYd3US5AVB9" target='blank'>11 Brink Street, Welgemoed, 7500</a>
+                    <div id="address-img" className="contact-image" />
+                    <hr className="divider" />
+                    <div>
+                        11 Brink Street, Welgemoed, 7500
+                    </div>
+                    <a className="contact-action-button" href="https://goo.gl/maps/9ez3gAVYd3US5AVB9" target='blank'>
+                        Click here for directions
+                    </a>
                 </div>
             </div>
 
 
-        </div>
+        </div >
     );
 };
 export default Contact;
