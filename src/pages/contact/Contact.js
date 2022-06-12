@@ -13,7 +13,7 @@ const Contact = () => {
                     <div id="whatsapp-img" className="contact-image" />
                     <hr className="divider" />
                     <div className="sub-container-text">082 350 5445</div>
-                    <a className="contact-action-button" href={`https://wa.me/27726983512?text=${encodeURI('Hi, I have a stationery related enquiry.')}`} target='blank'>
+                    <a className="contact-action-button" href={`https://wa.me/27823505445?text=${encodeURI('Hi, I have a stationery related enquiry.')}`} target='blank'>
                         Click here to start whatsapp chat
                     </a>
                 </div>
